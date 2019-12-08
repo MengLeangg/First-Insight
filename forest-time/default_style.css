@@ -833,8 +833,8 @@ div.tab button:hover {
 **************************************/
 
 .carousel-indicators li {
-    max-width: 15px;
-    height: 15px;
+    max-width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: red;
 }

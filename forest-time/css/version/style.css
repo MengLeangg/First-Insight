@@ -161,7 +161,7 @@ h2 {
 }
 
 .navbar-toggler {
-  outline: none;
+  outline: none !important;
 }
 
 .authorbox p a,
