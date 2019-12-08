@@ -334,8 +334,8 @@ a:focus,
 }
 
 .card__image:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .card__image--flowers {
@@ -494,6 +494,11 @@ a:focus,
 
 .vdo {
   background: #cccccc;
+  background-image: url("../../images/Partner/partner_bg-5.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   max-width: 100%;
 }
 
