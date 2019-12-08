@@ -312,10 +312,9 @@ a:focus,
     flex-direction: column;
     overflow: hidden;
     &:hover {
-      .card__image {
-        filter: contrast(100%);
-        transform: scale(1.1);
-      }
+      // .card__image {
+      //   transform: scale(1.2);
+      // }
     }
   }
   
@@ -332,12 +331,11 @@ a:focus,
     background-size: cover;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    transition: all 1s ease;
-    filter: contrast(70%);
+    transition: all 0.5s ease-in-out;
     //filter: saturate(180%);
     overflow: hidden;
     position: relative;
-    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+    // transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
     &::before {
       content: "";
       display: block;
@@ -348,6 +346,10 @@ a:focus,
         padding-top: 66.6%; // 3:2 aspect ratio
       }
     }
+  }
+
+  .card__image:hover {
+    transform: scale(1.2);
   }
   
   .card__image--flowers {
@@ -513,6 +515,11 @@ a:focus,
   transform: scale(1.2);
 }
 
+.gallery .video img{
+  width: 100%;
+  height: auto;
+}
+
 
 .video-banner-icon-play {
   position: absolute;
@@ -520,13 +527,12 @@ a:focus,
   top: 50%;
   
   display: block;
-  width: 0.5em;
-  height: 0.5em;
+  width: 4em !important; 
+  height: 4em !important;
   
 	transform: translateX(-50%) translateY(-50%) scale(1.0);
   
-	transition: 
-		all 0.2s ease-out 0.05s;
+	transition: all 0.2s ease-out 0.05s;
 }
 @media (min-width: 641px) {
   .video-banner-icon-play {

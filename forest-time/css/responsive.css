@@ -70,6 +70,10 @@
     .logo-footer, .quick-link-footer, .contact-us-footer{
         text-align: center;
     }
+    .video-banner-icon-play{
+        width: 0;
+        height: 0;
+    }
 }
 
 @media (max-width: 728px) {
@@ -133,11 +137,15 @@
         font-size: 17px !important;
         padding: 1.3rem 1rem !important;
     }
-    .video-banner-icon-play{
-        width: 5.5em !important;
-        height: 5.5em !important;
-    }
+    
 }
+
+/* @media (max-width: 640px){
+    .video-banner-icon-play{
+        width: 5em !important;
+        height: 5em !important;
+    }
+} */
 
 @media (min-width: 992px) {
     .header .dropdown-menu {
@@ -201,5 +209,11 @@
     .header .navbar-nav .has-submenu > ul li ul.show-right {
         right: 130%;
         left: auto;
+    }
+}
+@media (max-width: 992px) {
+    .video-banner-icon-play{
+        width: 3em !important;
+        height: 3em !important;
     }
 }

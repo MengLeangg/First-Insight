@@ -295,13 +295,6 @@ a:focus,
   overflow: hidden;
 }
 
-.card:hover .card__image {
-  -webkit-filter: contrast(100%);
-          filter: contrast(100%);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .card__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,16 +315,10 @@ a:focus,
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-filter: contrast(70%);
-          filter: contrast(70%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   overflow: hidden;
   position: relative;
-  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 
 .card__image::before {
@@ -344,6 +331,11 @@ a:focus,
   .card__image::before {
     padding-top: 66.6%;
   }
+}
+
+.card__image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .card__image--flowers {
@@ -523,13 +515,18 @@ a:focus,
           transform: scale(1.2);
 }
 
+.gallery .video img {
+  width: 100%;
+  height: auto;
+}
+
 .video-banner-icon-play {
   position: absolute;
   left: 50%;
   top: 50%;
   display: block;
-  width: 0.5em;
-  height: 0.5em;
+  width: 4em !important;
+  height: 4em !important;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
           transform: translateX(-50%) translateY(-50%) scale(1);
   -webkit-transition: all 0.2s ease-out 0.05s;
