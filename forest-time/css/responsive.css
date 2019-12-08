@@ -137,7 +137,17 @@
         font-size: 17px !important;
         padding: 1.3rem 1rem !important;
     }
-    
+    .email-top.mobile{
+        display: block !important;
+        padding-top: 5px;
+        margin: 0 auto;
+    }
+    .email-top.mobile a{
+        text-align: center;
+    }
+    .email-top.desktop{
+        display: none !important;
+    }
 }
 
 /* @media (max-width: 640px){
