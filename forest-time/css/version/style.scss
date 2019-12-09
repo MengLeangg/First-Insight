@@ -184,6 +184,46 @@ a:focus,
     /*border-bottom: 1px solid #fff;*/
 
 }
+// Navigation Animation Hover
+.navbar-nav .nav-item a{
+  color: #FFF;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-item a:before,
+.navbar-nav .nav-item a:after{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+.navbar-nav .nav-item a:before{
+  top: 0px;
+  transform: translateY(10px);
+}
+.navbar-nav .nav-item a:after{
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+.navbar-nav .nav-item a:hover:before,
+.navbar-nav .nav-item a:hover:after{
+  opacity: 1;
+  transform: translateY(0px);
+}
+// Current menu item
+.current-menu a{
+  color: #ea4c89 !important;
+}
 // Carousel ========================
 .carousel-caption{
   padding-bottom:80px;
@@ -550,6 +590,38 @@ a:focus,
   backgound: #330099;
 }
 
+.see-more{
+  position: relative;
+  width: 100%;
+}
+.see-more a {
+  display: block;
+  width: 100px;
+  margin: 2em auto 0em;
+  text-align: center;
+  font-size: 16px;
+  color: $white;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+  &::after {
+    content: '\2192';
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    padding-top: 4px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.3s;
+  }
+  &:hover {
+    &::after {
+      transform: translate(5px, -50%);
+      opacity: 1;
+    }
+  }
+}
+
 // Footer Page********************************************************************************************
 .site-footer
 {
@@ -597,7 +669,8 @@ a:focus,
 }
 .footer-links li
 {
-  display:block
+  display:block;
+  padding-top: 10px;
 }
 .footer-links a
 {
@@ -722,6 +795,9 @@ a:focus,
 }
 .footer-ul > ul{
   list-style: none;
+}
+.footer-ul ul li{
+  padding-top: 10px;
 }
 
 

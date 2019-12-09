@@ -686,6 +686,7 @@ div.tab button:hover {
     width: 40px;
     height: 40px;
     text-indent: -99999px;
+    border-radius: 10%;
     position: fixed;
     bottom: -100px;
     right: 25px;
