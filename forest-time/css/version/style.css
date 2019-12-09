@@ -6,6 +6,7 @@
     http://themeforest.net/user/wpdestek
 
 **************************************/
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 h1,
 h2,
 h3,
@@ -386,19 +387,42 @@ a:focus,
 }
 
 .card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
+  background-image: url("../../upload/insta_01.jpeg");
 }
 
 .card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+  background-image: url("../../upload/insta_01.jpeg");
 }
 
 .card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
+  background-image: url("../../upload/insta_01.jpeg");
 }
 
 .card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+  background-image: url("../../upload/insta_01.jpeg");
+}
+
+.card_date {
+  background-color: #150A59;
+  font-family: 'Titillium Web', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
+  padding: 2px 13px;
+  position: absolute;
+  left: auto;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card_date span {
+  color: #fff;
 }
 
 .card__title {
@@ -407,6 +431,7 @@ a:focus,
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .card__text {
@@ -505,11 +530,12 @@ a:focus,
   outline: none;
 }
 
-.owl-nav button:hover .owl-nav span {
-  color: #111111 !important;
+.owl-nav button:hover {
+  background-color: #150A59 !important;
 }
 
 .owl-nav span {
+  color: #150A59;
   font-size: 30px;
   display: inline-block;
   width: 26px;
@@ -528,7 +554,20 @@ a:focus,
 }
 
 .owl-dots span {
-  width: 25px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.owl-dots button {
+  outline: none;
+}
+
+.owl-dots .owl-dot span {
+  background-color: #bdb5b5 !important;
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: #150A59 !important;
 }
 
 .lastest {
