@@ -186,6 +186,9 @@ a:focus,
     /*border-bottom: 1px solid #fff;*/
 
 }
+// Language
+
+
 // Navigation Animation Hover
 .navbar-nav .nav-item a{
   color: #FFF;
@@ -337,7 +340,8 @@ a:focus,
   
   .cards__item {
     display: flex;
-    padding: 1rem;
+    //padding: 1rem;
+    //padding: 0px !important;
     @media(min-width: 40rem) {
       width: 50%;
     }
@@ -345,7 +349,9 @@ a:focus,
       width: 33.3333%;
     }
   }
-  
+  .cards__item.w-100{
+    
+  }
   .card {
     background-color: white;
     border-radius: 0.25rem;
@@ -428,6 +434,9 @@ a:focus,
   }
   .card_date span{
     color: #fff;
+  }
+  .card_date span::before{
+    // content: "\f001";
   }
   .card__title {
     color: $gray-dark;
