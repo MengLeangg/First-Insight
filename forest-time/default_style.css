@@ -837,7 +837,10 @@ div.tab button:hover {
     max-width: 13px;
     height: 13px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #fff;
+}
+.carousel-indicators li.active {
+    background-color: #150A59 !important;
 }
 
 .tag-cloud-single span {

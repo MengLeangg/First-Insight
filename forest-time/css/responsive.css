@@ -74,6 +74,12 @@
         width: 0;
         height: 0;
     }
+    .carousel-caption h3{
+        font-size: 14px !important;
+    }
+    .carousel-caption .btn-large{
+        padding: 10px 20px !important;
+    }
 }
 
 @media (max-width: 728px) {
