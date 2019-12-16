@@ -62,53 +62,8 @@ h2 {
   padding: 0.1rem 1rem;
 }
 
-#map {
-  height: 400px;
-  position: relative;
+#Map iframe {
   width: 100%;
-  z-index: 1;
-}
-
-#map img {
-  max-width: inherit;
-}
-
-.loader {
-  margin-left: 10px;
-}
-
-.map {
-  position: relative;
-}
-
-.map .row {
-  position: relative;
-}
-
-.infobox img {
-  width: 100% !important;
-}
-
-.map .searchmodule {
-  padding: 18px 10px;
-}
-
-.infobox {
-  display: block;
-  margin: 0;
-  padding: 0 0 10px;
-  position: relative;
-  width: 260px;
-  z-index: 100;
-}
-
-.infobox .title {
-  font-size: 13px;
-  line-height: 1;
-  margin-bottom: 0;
-  margin-top: 15px;
-  padding-bottom: 5px;
-  text-transform: capitalize;
 }
 
 .header .dropdown-item:hover,
@@ -392,54 +347,6 @@ a:focus,
 .card__image:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.card__image--1 {
-  background-image: url("../../images/card_image/card_1.jpg");
-}
-
-.card__image--2 {
-  background-image: url("../../images/card_image/card_2.jpg");
-}
-
-.card__image--3 {
-  background-image: url("../../images/card_image/card_3.jpg");
-}
-
-.card__image--4 {
-  background-image: url("../../images/card_image/card_4.jpg");
-}
-
-.card__image--5 {
-  background-image: url("../../images/card_image/card_5.jpg");
-}
-
-.card__image--6 {
-  background-image: url("../../images/card_image/card_6.jpg");
-}
-
-.card__image--7 {
-  background-image: url("../../images/card_image/card_7.jpg");
-}
-
-.card__image--8 {
-  background-image: url("../../images/card_image/card_8.jpg");
-}
-
-.card__image--9 {
-  background-image: url("../../images/card_image/card_9.jpg");
-}
-
-.card__image--10 {
-  background-image: url("../../images/card_image/card_10.jpg");
-}
-
-.card__image--11 {
-  background-image: url("../../images/card_image/card_11.jpg");
-}
-
-.card__image--12 {
-  background-image: url("../../images/card_image/card_12.jpg");
 }
 
 .card_date {
@@ -741,13 +648,8 @@ a:focus,
   letter-spacing: 2px;
 }
 
-.site-footer a {
-  color: #150A59;
-}
-
-.site-footer a:hover {
-  color: #ececec;
-  text-decoration: none;
+.site-footer a, .site-footer a p {
+  color: #150A59 !important;
 }
 
 .footer-links {
@@ -762,6 +664,10 @@ a:focus,
 
 .footer-links a {
   color: #150A59;
+}
+
+.footer-links a:hover {
+  color: #807777 !important;
 }
 
 .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
