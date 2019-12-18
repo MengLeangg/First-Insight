@@ -74,7 +74,7 @@ h2{
     padding: 0.1rem 1rem;
 }
 
-#Map iframe{
+#Map p iframe{
   width: 100%;
 }
 // #map {
@@ -492,7 +492,7 @@ a:focus,
     color: #fff;
   }
   .card_date span::before{
-    // content: "\f001";
+    // font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f017";
   }
   .card__title {
     // color: $color-main !important;
